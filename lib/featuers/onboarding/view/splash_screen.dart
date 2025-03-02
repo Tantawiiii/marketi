@@ -4,7 +4,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:marketi/core/constant/assets_path.dart';
 import 'package:marketi/core/routing/routes.dart';
-import 'package:marketi/core/utils/colors_code.dart';
+import 'package:marketi/core/constant/colors_code.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
 
-    Timer(Duration(seconds: 1), (){
+    Timer(Duration(seconds: 3), (){
       Navigator.pushReplacementNamed(context, RRoutes.rOnBoarding);
     });
   }

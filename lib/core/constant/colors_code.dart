@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 class TColors {
 
   static const Color CWhite = Color(0XffFFFFFF);
+  static const Color CPrimary= Color(0Xff3F80FF);
   static const Color CBLUE_BTN = Color(0Xff3F80FF);
   static const Color CDarkBLUE_900 = Color(0Xff001640);
   static const Color CDarkBLUE_700 = Color(0Xff002B7F);

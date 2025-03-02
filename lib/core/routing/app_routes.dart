@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:marketi/core/routing/routes.dart';
-import 'package:marketi/featuers/auth/view/on_boarding_screen.dart';
-import 'package:marketi/featuers/auth/view/splash_screen.dart';
+
+import '../../featuers/onboarding/view/on_boarding_screen.dart';
+import '../../featuers/onboarding/view/splash_screen.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings setting) {

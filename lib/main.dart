@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:marketi/core/constant/strings_text.dart';
 import 'package:marketi/core/routing/app_routes.dart';
 import 'package:marketi/core/routing/routes.dart';
 
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
-        title: 'Marketi',
+        debugShowCheckedModeBanner: false,
+        title: TTexts.TAppName,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
