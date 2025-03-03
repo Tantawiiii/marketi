@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:marketi/core/routing/routes.dart';
+import 'package:marketi/featuers/auth/login/view/login_screen.dart';
 
 import '../../featuers/onboarding/cubit/onboarding_cubit.dart';
 import '../../featuers/onboarding/view/on_boarding_screen.dart';
@@ -20,7 +21,8 @@ class AppRouter {
                 child: OnBoardingScreen(),
               ),
         );
-
+      case RRoutes.rLogin:
+        return MaterialPageRoute(builder: (_) => LoginScreen());
       default:
         return MaterialPageRoute(
           builder:
