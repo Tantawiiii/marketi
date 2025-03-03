@@ -6,6 +6,8 @@ import 'package:marketi/core/constant/colors_code.dart';
 import 'package:marketi/core/utils/onBoarding_list_model.dart';
 import 'package:marketi/featuers/onboarding/cubit/onboarding_cubit.dart';
 
+import '../../auth/login/view/login_screen.dart';
+
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
 
@@ -27,7 +29,7 @@ class OnBoardingScreen extends StatelessWidget {
                     flex: 3,
                     child: PageView.builder(
                       controller: cubit.pageController,
-                      onPageChanged: (index){
+                      onPageChanged: (index) {
                         cubit.changeCurrentIndex(index);
                       },
                       itemCount: onBoardingList.length,
@@ -105,7 +107,11 @@ class OnBoardingScreen extends StatelessWidget {
                                             .read<OnBoardingCubit>()
                                             .nextPage();
                                       } else {
-                                        //Navigator.of(context).pushReplacement(MaterialPageRoute(builder: ))
+                                        Navigator.of(context).pushReplacement(
+                                          MaterialPageRoute(
+                                            builder: (_) => LoginScreen(),
+                                          ),
+                                        );
                                       }
                                     },
                                     color: TColors.CBLUE_BTN,
@@ -117,7 +123,8 @@ class OnBoardingScreen extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(14),
                                     ),
                                     child: Text(
-                                      cubit.currentIndex < onBoardingList.length - 1
+                                      cubit.currentIndex <
+                                              onBoardingList.length - 1
                                           ? 'Next'
                                           : 'Get Started',
                                       textAlign: TextAlign.center,
