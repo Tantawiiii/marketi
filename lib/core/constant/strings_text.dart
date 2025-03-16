@@ -23,6 +23,7 @@ class TTexts{
   static const String tSignUp = "Sign up";
   static const String tSIGNup = "SIGN UP";
   static const String tEmailHint = "abc@email.com";
+  static const String tPhoneHint = "+20 1094642577";
   static const String tPasswordHint = "Your password";
   static const String tRememberMe = "Remember Me";
   static const String tForgotPassword = "Forgot Password?";

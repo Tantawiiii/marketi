@@ -2,10 +2,12 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
+import '../constant/api_contstant.dart';
+
 class DioHelper {
   static final Dio _dio = Dio(
     BaseOptions(
-     // baseUrl: ApisClient.BASE_URL,
+      baseUrl: ApisClient.BaseApi,
       connectTimeout: const Duration(seconds: 10),
       receiveTimeout: const Duration(seconds: 10),
       headers: {'Accept': 'application/json'},
@@ -13,8 +15,8 @@ class DioHelper {
   )..interceptors.add(
     PrettyDioLogger(
       requestHeader: true,
-      // requestBody: true,
-      // responseBody: true,
+      requestBody: true,
+      responseBody: true,
       responseHeader: false,
       error: true,
       compact: true,

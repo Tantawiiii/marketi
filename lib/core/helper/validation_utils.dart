@@ -36,8 +36,8 @@ class ValidationUtils {
   }
 
   static String? validateFullName(String? value) {
-    if (value == null || value.trim().split(' ').length < 3) {
-      return 'Full name must be at least 3 words';
+    if (value == null || value.trim().split(' ').length < 1) {
+      return 'Full name must be at least 1 words';
     }
     return null;
   }
@@ -47,5 +47,18 @@ class ValidationUtils {
       return 'Passwords do not match';
     }
     return validatePassword(value);
+  }
+
+  static String? validateEgyptianPhoneNumber(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Phone number is required';
+    }
+
+    final regex = RegExp(r'^(?:\+20|0)?1[0-2,5]{1}[0-9]{8}$');
+    if (!regex.hasMatch(value)) {
+      return 'Enter a valid phone (e.g., +201234567890 or 01234567890)';
+    }
+
+    return null;
   }
 }

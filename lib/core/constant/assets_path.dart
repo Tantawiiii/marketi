@@ -31,6 +31,7 @@ class AssetsPATH {
   static const String iExplore = "assets/svgs/explor_icon.svg";
   static const String iFacebook = "assets/svgs/facebook_icon.svg";
   static const String iGoogle = "assets/svgs/google_icon.svg";
+  static const String iApple = "assets/svgs/apple_icon.svg";
   static const String iFilters = "assets/svgs/filters_icon.svg";
   static const String iFilterCircle = "assets/svgs/filter-circle.svg";
   static const String iFood = "assets/svgs/food_icon.svg";
@@ -40,6 +41,7 @@ class AssetsPATH {
   static const String iLogOut = "assets/svgs/log-in-outline.svg";
   static const String iMassages = "assets/svgs/massages_icon.svg";
   static const String iEmail = "assets/svgs/Message.svg";
+  static const String iPhone = "assets/svgs/Phone_Icon.svg";
   static const String iMusic = "assets/svgs/music_icon.svg";
   static const String iNavMenu = "assets/svgs/nav_menu.svg";
   static const String iMenuDots = "assets/svgs/dots.svg";
